@@ -30,7 +30,7 @@ class SimpleForm extends React.Component<SimpleFormProps, any> {
     }
     return (
       <Item error={hasError}>
-        <Text>XXX</Text>
+        <Text>{label}</Text>
         <Input {...input} />
         {hasError ? <Text>{error}</Text> : <Text />}
       </Item>

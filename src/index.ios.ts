@@ -2,7 +2,7 @@ import { Navigation } from 'react-native-navigation';
 
 import { registerScreens } from './screens';
 
-console.disableYellowBox = true;
+//console.disableYellowBox = true;
 registerScreens(); // this is where you register all of your app's screens
 
 // start the app
