@@ -6,6 +6,9 @@ import {
   View
 } from 'react-native';
 
+import { Provider } from 'react-redux';
+import SimpleForm from '../forms/simpleForm/SimpleForm';
+import { store } from '../../store'
 interface Props {
   [propsName: string]: any
 
@@ -14,7 +17,14 @@ interface Props {
 
 class SecondTabScreen extends React.Component<Props, any> {
   render() {
-    return (<View>      <Text>        第2      </Text>    </View>)
+    return (
+
+      <Provider store={store}>
+
+
+        <SimpleForm />
+
+      </Provider>)
   }
 }
 
